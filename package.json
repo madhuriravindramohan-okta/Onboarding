@@ -1,0 +1,28 @@
+{
+  "name": "OnboardingProj-oauth2orize",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "clean": "^4.0.2",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "errorhandler": "^1.5.0",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "mongoose": "^6.2.5",
+    "oauth2orize": "^1.11.1",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
+    "passport-oauth2-client-password": "^0.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
