@@ -42,7 +42,11 @@ passport.use(new ClientPasswordStrategy(db.client.createStrategy()));
  */
 passport.use(new BearerStrategy(
   (accessToken, done) => {
+<<<<<<< HEAD
     localdb.accessTokens.find(accessToken, (error, token) => {
+=======
+    db.accessTokens.find(accessToken, (error, token) => {
+>>>>>>> 6137dd3786d793295a97ec38f8e938f0005f8de9
       if (error) return done(error);
       if (!token) return done(null, false);
       if (token.userId) {
