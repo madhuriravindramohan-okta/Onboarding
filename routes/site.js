@@ -12,7 +12,7 @@ module.exports.secretPage = (request, response) => response.sendFile(path.resolv
 module.exports.login = passport.authenticate('local', { successReturnToOrRedirect: '/secretPage', failureRedirect: '/login' });
 module.exports.signup = (request, response) => {
   user.register({ username: request.body.username, active: false }, request.body.password);
-  response.send(`Welcome to the club ${request.body.username}! Please Sign-In<br><br>
+  response.send(`Welcome to the special club ${request.body.username}! Please Sign-In<br><br>
    <a href="/login">Sign-In</a><br><br>`);
 };
 
